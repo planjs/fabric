@@ -1,6 +1,6 @@
 {
   "name": "@planjs/fabric",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "code style",
   "main": "dist/index.js",
   "scripts": {
@@ -27,6 +27,9 @@
   },
   "homepage": "https://github.com/planjs/fabric#readme",
   "dependencies": {
+    "@typescript-eslint/parser": "^2.34.0",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-react-app": "^5.2.1",
@@ -37,7 +40,7 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^2.5.1",
     "prettier": "^2.1.1",
-    "stylelint": "^13.7.1",
+    "stylelint": "^10.1.0",
     "stylelint-config-css-modules": "^1.4.0",
     "stylelint-config-prettier": "^5.2.0",
     "stylelint-config-rational-order": "^0.1.2",

@@ -7,7 +7,14 @@ module.exports = {
     jest: true,
     jasmine: true,
   },
-  extends: ['react-app', 'prettier', 'prettier/react', 'prettier/@typescript-eslint'],
+  extends: [
+    'react-app',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+    'prettier/react',
+    'prettier/@typescript-eslint',
+  ],
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
     'no-void': 0,
