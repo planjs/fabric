@@ -26,7 +26,7 @@ module.exports = {
       { functions: false, classes: true, variables: true, typedefs: true },
     ],
     '@typescript-eslint/explicit-function-return-type': [
-      2,
+      0,
       { allowTypedFunctionExpressions: true },
     ],
     '@typescript-eslint/camelcase': 0,
