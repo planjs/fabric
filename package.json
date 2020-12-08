@@ -1,6 +1,6 @@
 {
   "name": "@planjs/fabric",
-  "version": "0.0.6g",
+  "version": "0.0.7",
   "description": "code style",
   "main": "dist/index.js",
   "scripts": {
