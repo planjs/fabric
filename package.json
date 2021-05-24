@@ -4,8 +4,9 @@
   "description": "code style",
   "main": "dist/index.js",
   "scripts": {
+    "release": "npx standard-version -a",
     "prepare": "tsc",
-    "prepublishOnly": "npm run prepare",
+    "prepublishOnly": "npm run prepare && npm run release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,7 +34,7 @@
     "babel-eslint": "10.1.0",
     "eslint": "7.14.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-config-react-app": "5.2.1",
+    "eslint-config-react-app": "6.0.0",
     "eslint-plugin-flowtype": "5.2.0",
     "eslint-plugin-import": "2.23.3",
     "eslint-plugin-jsx-a11y": "6.3.1",
