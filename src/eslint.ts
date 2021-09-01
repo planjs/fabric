@@ -18,7 +18,6 @@ module.exports = {
     'no-void': 0,
     'no-empty': [2, { allowEmptyCatch: true }],
     'prefer-promise-reject-errors': [2, { allowEmptyReject: true }],
-    'import/order': 1,
     '@typescript-eslint/no-use-before-define': [
       2,
       { functions: false, classes: true, variables: true, typedefs: true },
@@ -28,7 +27,8 @@ module.exports = {
       { allowTypedFunctionExpressions: true },
     ],
     '@typescript-eslint/camelcase': 0,
-      'import/order': [ // import 分组排序
+    'import/order': [
+      // import 分组排序
       'error',
       {
         groups: [
@@ -39,10 +39,10 @@ module.exports = {
           'sibling',
           // ['parent', 'sibling'], // Then sibling and parent types. They can be mingled together
           'index', // Then the index file
-          'object' // Then the rest: internal and external type
+          'object', // Then the rest: internal and external type
         ],
-        'newlines-between': 'always'
-      }
+        'newlines-between': 'always',
+      },
     ],
     'padding-line-between-statements': [
       // 块级前后加空行，表达式前后加空行
@@ -52,7 +52,7 @@ module.exports = {
       { blankLine: 'always', prev: 'multiline-expression', next: '*' },
       { blankLine: 'always', prev: '*', next: 'multiline-expression' },
       { blankLine: 'always', prev: '*', next: 'return' },
-      { blankLine: 'always', prev: 'import', next: 'expression' }
+      { blankLine: 'always', prev: 'import', next: 'expression' },
     ],
     'no-else-return': ['error', { allowElseIf: false }], // if return 则去掉else
   },
