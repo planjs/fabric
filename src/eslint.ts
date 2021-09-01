@@ -28,5 +28,32 @@ module.exports = {
       { allowTypedFunctionExpressions: true },
     ],
     '@typescript-eslint/camelcase': 0,
+      'import/order': [ // import 分组排序
+      'error',
+      {
+        groups: [
+          'builtin', // Built-in types are first
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          // ['parent', 'sibling'], // Then sibling and parent types. They can be mingled together
+          'index', // Then the index file
+          'object' // Then the rest: internal and external type
+        ],
+        'newlines-between': 'always'
+      }
+    ],
+    'padding-line-between-statements': [
+      // 块级前后加空行，表达式前后加空行
+      'error',
+      { blankLine: 'always', prev: 'block-like', next: '*' },
+      { blankLine: 'always', prev: '*', next: 'block-like' },
+      { blankLine: 'always', prev: 'multiline-expression', next: '*' },
+      { blankLine: 'always', prev: '*', next: 'multiline-expression' },
+      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: 'import', next: 'expression' }
+    ],
+    'no-else-return': ['error', { allowElseIf: false }], // if return 则去掉else
   },
 };
