@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.82 (2021-10-17)
+
+
+### Features
+
+* check is typescript ([8befd39](https://github.com/planjs/fabric/commit/8befd39e10b9d02971dc029579a9ddac7043622a))
+
 ### 0.0.81 (2021-09-12)
 
 ### 0.0.80 (2021-09-02)
