@@ -1,10 +1,17 @@
+const path = require('path');
+const fs = require('fs');
+
+const tsConfig = require('./TSEslint');
+
+const isTsProject = fs.existsSync(path.join(process.cwd() || '.', './tsconfig.json'));
+
 module.exports = {
   extends: [
     'react-app',
-    'plugin:@typescript-eslint/eslint-recommended',
+    isTsProject && 'plugin:@typescript-eslint/eslint-recommended',
     'plugin:prettier/recommended',
     'prettier',
-  ],
+  ].filter(Boolean),
   env: {
     browser: true,
     node: true,
@@ -13,20 +20,12 @@ module.exports = {
     jest: true,
     jasmine: true,
   },
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: [isTsProject && '@typescript-eslint', 'prettier'].filter(Boolean),
   rules: {
     'no-void': 0,
     'no-empty': [2, { allowEmptyCatch: true }],
     'prefer-promise-reject-errors': [2, { allowEmptyReject: true }],
-    '@typescript-eslint/no-use-before-define': [
-      2,
-      { functions: false, classes: true, variables: true, typedefs: true },
-    ],
-    '@typescript-eslint/explicit-function-return-type': [
-      0,
-      { allowTypedFunctionExpressions: true },
-    ],
-    '@typescript-eslint/camelcase': 0,
     'no-else-return': [2, { allowElseIf: false }], // if return 则去掉else
+    ...(isTsProject ? tsConfig : {}),
   },
 };
