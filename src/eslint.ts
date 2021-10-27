@@ -20,7 +20,7 @@ module.exports = {
     jest: true,
     jasmine: true,
   },
-  plugins: [isTsProject && '@typescript-eslint', 'prettier'].filter(Boolean),
+  plugins: ['prettier'].filter(Boolean),
   rules: {
     'no-void': 0,
     'no-empty': [2, { allowEmptyCatch: true }],
