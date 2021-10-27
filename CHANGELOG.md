@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.87 (2021-10-27)
+
+
+### Bug Fixes
+
+* typescript-eslint ([1193709](https://github.com/planjs/fabric/commit/1193709feef63a532f2322592853c2f35c5e6f5b))
+
 ### 0.0.86 (2021-10-27)
 
 
