@@ -28,4 +28,9 @@ module.exports = {
     'no-else-return': [2, { allowElseIf: false }], // if return 则去掉else
     ...(isTsProject ? tsConfig : {}),
   },
+  settings: {
+    react: {
+      version: 'latest',
+    },
+  },
 };
