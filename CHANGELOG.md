@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.90 (2021-10-28)
+
+
+### Bug Fixes
+
+* eslint config ([cde5aaf](https://github.com/planjs/fabric/commit/cde5aaf1f685dcafa06277e1e6437aa667d4b09e))
+
 ### 0.0.89 (2021-10-28)
 
 
