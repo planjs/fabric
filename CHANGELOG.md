@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.89 (2021-10-28)
+
+
+### Bug Fixes
+
+* react ([e090f23](https://github.com/planjs/fabric/commit/e090f238bdc0dded43b2d46677710aacd5b8b3c5))
+
 ### 0.0.88 (2021-10-27)
 
 ### 0.0.87 (2021-10-27)
