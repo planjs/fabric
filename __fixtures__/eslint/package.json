@@ -1,0 +1,6 @@
+{
+  "name": "eslint",
+  "scripts": {
+    "lint": "eslint src --fix"
+  }
+}
