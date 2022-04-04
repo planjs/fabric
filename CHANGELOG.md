@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.91-alpha.0](https://github.com/planjs/fabric/compare/v0.0.90...v0.0.91-alpha.0) (2022-04-04)
+
 ### 0.0.90 (2021-10-28)
 
 
