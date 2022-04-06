@@ -5,6 +5,11 @@ const tsConfig = require('./TSEslint');
 
 const isTsProject = fs.existsSync(path.join(process.cwd() || '.', './tsconfig.json'));
 
+// apply eslint-config-react-app env
+if (!process.env.NODE_ENV) {
+  process.env.NODE_ENV = 'production'
+}
+
 module.exports = {
   extends: [
     'react-app',
