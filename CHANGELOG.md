@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.92 (2022-04-06)
+
+
+### Bug Fixes
+
+* eslint-react-app NODE_ENV ([996170d](https://github.com/planjs/fabric/commit/996170ddf585a59ccf067bca05e4b87e6c8cc6ec))
+
 ### 0.0.91 (2022-04-04)
 
 ### [0.0.91-alpha.0](https://github.com/planjs/fabric/compare/v0.0.90...v0.0.91-alpha.0) (2022-04-04)
