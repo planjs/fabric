@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.94 (2022-06-18)
+
+
+### Bug Fixes
+
+* deps ([f322e1d](https://github.com/planjs/fabric/commit/f322e1ded9b5a16bab789313142703a2dc14bd2f))
+
 ### 0.0.93 (2022-05-21)
 
 ### [0.0.93-alpha.0](https://github.com/planjs/fabric/compare/v0.0.92...v0.0.93-alpha.0) (2022-05-21)
